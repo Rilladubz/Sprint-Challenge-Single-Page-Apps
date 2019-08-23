@@ -10,7 +10,7 @@ export default function TabNav() {
       <div>
         <Menu attached='top' tabular>
         
-          <NavLink className='main-tab' activeClassName="active" exact to='/'><Menu.Item name='Home Page'/></NavLink>
+          <NavLink className='tab main-tab' activeClassName="active" exact to='/'><Menu.Item name='Home Page'/></NavLink>
           <NavLink className='tab' activeClassName="active" to='/characters'><Menu.Item name='Characters'/></NavLink>
           <NavLink className='tab' activeClassName="active" to='/locations'><Menu.Item name='Locations'/></NavLink>
           <NavLink className='tab' activeClassName="active" to='/episodes'><Menu.Item name='Episodes'/></NavLink>
