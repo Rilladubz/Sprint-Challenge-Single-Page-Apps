@@ -1,11 +1,20 @@
 import React from "react";
 import { Card, Icon } from 'semantic-ui-react'
+import styled from 'styled-components';
+
+
+const StyledDiv = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem auto;
+  max-width: 30%;
+`;
 
 export default function LocationCard(props) {
   // console.log(props)
   return (
-    <div>
-      <Card>
+    <StyledDiv>
+      <Card className='card'>
         <Card.Content header={props.value.name} />
         <Card.Content description={props.value.type} />
         <Card.Content description={props.value.dimension} />
@@ -13,6 +22,6 @@ export default function LocationCard(props) {
           <Icon name='user' /># of residents: {props.value.residents.length}
         </Card.Content>
       </Card>
-    </div>
+    </StyledDiv>
   )
 }

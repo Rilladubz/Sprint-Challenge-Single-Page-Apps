@@ -1,10 +1,18 @@
 import React from "react";
 import { Card } from 'semantic-ui-react'
+import styled from 'styled-components';
+
+const StyledDiv = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem auto;
+  max-width: 30%;
+`;
 
 export default function EpisodeCard(props) {
     // console.log(props);
     return(
-        <div>
+        <StyledDiv>
              <Card>
                 <Card.Content>
                     <Card.Header>{props.value.name}</Card.Header>
@@ -16,6 +24,6 @@ export default function EpisodeCard(props) {
                     </Card.Description>
                 </Card.Content>
             </Card>
-        </div>
+        </StyledDiv>
     )
 }

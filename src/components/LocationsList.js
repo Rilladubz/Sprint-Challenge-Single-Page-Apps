@@ -15,9 +15,9 @@ export default function LocationsList() {
           })
           .catch(err => console.log("Server Failed:", err));
       }, []);
-    //   name, type, dimension, residents
+
     return(
-        <div>
+        <div >
              {location.map((value, key) => {
         return(
           <LocationCard value={value} key={key} />
