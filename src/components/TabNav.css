@@ -1,0 +1,22 @@
+.main-tab{
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.main-nav:hover{
+    background-color: blue;
+} 
+
+.tab:hover{
+    background-color: #D8D4D5;
+}
+
+.tab{
+    border-right: 1px solid black;
+}
+
+.active{
+    background-color: #BEBBBB;
+    color: white;
+    border-right: 1px solid black;
+}
